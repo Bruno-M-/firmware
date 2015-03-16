@@ -1,3 +1,10 @@
+raspberrypi-firmware (1.20150212-1+epi1) unstable; urgency=medium
+
+  * Add --rename option to preinst dpkg-divert for multistrap environement compatibility
+  * Regenerate pre/postinstall
+
+ -- Bruno Maitre <bruno.maitre@gmail.com>  Mon, 16 Mar 2015 07:23:37 +0100
+
 raspberrypi-firmware (1.20150212-1) unstable; urgency=low
 
   * firmware as of 47bd0f0f46b
