@@ -22,7 +22,7 @@ printf "mkdir -p /boot/overlays\n" >> raspberrypi-bootloader.preinst
 for FN in ../boot/* ../boot/*/*; do
   if ! [ -d "$FN" ]; then
     FN=${FN#../boot/}
-    printf "dpkg-divert --package rpikernelhack --divert /usr/share/rpikernelhack/$FN /boot/$FN\n" >> raspberrypi-bootloader.preinst
+    printf "dpkg-divert --rename --package rpikernelhack --divert /usr/share/rpikernelhack/$FN /boot/$FN\n" >> raspberrypi-bootloader.preinst
   fi
 done
 printf "#DEBHELPER#\n" >> raspberrypi-bootloader.preinst
