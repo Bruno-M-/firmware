@@ -1,3 +1,13 @@
+raspberrypi-firmware (1.20150214-1+epi1) unstable; urgency=medium
+
+  [ popcornmix ]
+  * firmware: Fix issue with turbo mode and under-voltage warning causing crash with poor power supply See: http://www.raspberrypi.org/forums/viewtopic.php?f=28&t=99975
+  * firmware: arm_loader: Avoid race condition that can cause an over temp warning on boot
+
+  [ Bruno Maitre ]
+
+ -- popcornmix <popcornmix@gmail.com>  Tue, 17 Mar 2015 09:44:23 +0100
+
 raspberrypi-firmware (1.20150212-1+epi1) unstable; urgency=medium
 
   * Add --rename option to preinst dpkg-divert for multistrap environement compatibility
